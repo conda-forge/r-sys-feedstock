@@ -1,4 +1,4 @@
-{% set version = '3.1' %}
+{% set version = '3.2' %}
 {% set posix = 'm2-' if win else '' %}
 {% set native = 'm2w64-' if win else '' %}
 
@@ -10,7 +10,7 @@ source:
   url:
     - {{ cran_mirror }}/src/contrib/sys_{{ version }}.tar.gz
     - {{ cran_mirror }}/src/contrib/Archive/sys/sys_{{ version }}.tar.gz
-  sha256: 98088e01e7682077569ed8a5f767c59b34172d6240af3c7462270fa83ce3432a
+  sha256: 2819498461fe2ce83d319d1a47844e86bcea6d01d10861818dba289e7099bbcc
 
 build:
   merge_build_host: True  # [win]
@@ -55,7 +55,7 @@ extra:
 # Package: sys
 # Type: Package
 # Title: Powerful and Reliable Tools for Running System Commands in R
-# Version: 3.1
+# Version: 3.2
 # Authors@R: c(person("Jeroen", "Ooms", role = c("aut", "cre"),  email = "jeroen@berkeley.edu", comment = c(ORCID = "0000-0002-4035-0289")), person("Gabor", "Csardi", , "csardi.gabor@gmail.com", role = "ctb"))
 # Description: Drop-in replacements for the base system2() function with fine control and consistent behavior across platforms. Supports clean interruption, timeout,  background tasks, and streaming STDIN / STDOUT / STDERR over binary or text  connections. Arguments on Windows automatically get encoded and quoted to work  on different locales.
 # License: MIT + file LICENSE
@@ -67,8 +67,8 @@ extra:
 # Suggests: unix (>= 1.4), spelling, testthat
 # Language: en-US
 # NeedsCompilation: yes
-# Packaged: 2019-03-10 17:35:59 UTC; jeroen
+# Packaged: 2019-04-23 21:04:34 UTC; jeroen
 # Author: Jeroen Ooms [aut, cre] (<https://orcid.org/0000-0002-4035-0289>), Gabor Csardi [ctb]
 # Maintainer: Jeroen Ooms <jeroen@berkeley.edu>
 # Repository: CRAN
-# Date/Publication: 2019-03-10 20:40:03 UTC
+# Date/Publication: 2019-04-23 22:40:08 UTC
