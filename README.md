@@ -1,7 +1,7 @@
 About r-sys
 ===========
 
-Home: https://github.com/jeroen/sys#readme
+Home: https://github.com/jeroen/sys
 
 Package license: MIT
 
