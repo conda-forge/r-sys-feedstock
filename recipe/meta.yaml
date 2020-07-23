@@ -1,4 +1,4 @@
-{% set version = '3.3' %}
+{% set version = "3.4" %}
 {% set posix = 'm2-' if win else '' %}
 {% set native = 'm2w64-' if win else '' %}
 
@@ -10,11 +10,11 @@ source:
   url:
     - {{ cran_mirror }}/src/contrib/sys_{{ version }}.tar.gz
     - {{ cran_mirror }}/src/contrib/Archive/sys/sys_{{ version }}.tar.gz
-  sha256: a6217c2a7240ed68614006f392c6d062247dab8b9b0d498f95e947110df19b93
+  sha256: 17f88fbaf222f1f8fd07919461093dac0e7175ae3c3b3264b88470617afd0487
 
 build:
-  merge_build_host: True  # [win]
-  number: 1
+  merge_build_host: true  # [win]
+  number: 0
   rpaths:
     - lib/R/lib/
     - lib/
@@ -42,13 +42,11 @@ test:
 about:
   home: https://github.com/jeroen/sys
   license: MIT
-  summary: Drop-in replacements for the base system2() function with fine control and consistent
-    behavior across platforms. Supports clean interruption, timeout,  background tasks,
-    and streaming STDIN / STDOUT / STDERR over binary or text  connections. Arguments
-    on Windows automatically get encoded and quoted to work  on different locales.
+  summary: Drop-in replacements for the base system2() function with fine control and consistent behavior across platforms. Supports clean interruption, timeout,  background tasks, and streaming STDIN / STDOUT / STDERR over binary or text  connections. Arguments on Windows automatically get encoded and quoted to work  on
+    different locales.
   license_family: MIT
   license_file:
-    - '{{ environ["PREFIX"] }}/lib/R/share/licenses/MIT'
+    - {{ environ["PREFIX"] }}/lib/R/share/licenses/MIT
     - LICENSE
 
 extra:
